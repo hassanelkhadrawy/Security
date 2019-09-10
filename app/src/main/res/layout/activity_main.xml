@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha=".7">
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:alpha=".5"
+    android:layout_margin="30dp"
+    >
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="30dp"
+        >
+
+
+        <Spinner
+            android:textColor="@android:color/white"
+            android:id="@+id/select_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="key"
+            android:inputType="number" />
+
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="M"
+            android:inputType="number" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/Daynmic_Linyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/length_of_language"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="Index of language" />
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/input_Language"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Input Your language" />
+    </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/plan_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Text"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/S_Enc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Encryption"
+                android:textColor="@android:color/white"
+                android:theme="@style/SCBSwitch" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/S_Dec"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:text="Decryption"
+                android:theme="@style/SCBSwitch" />
+        </LinearLayout>
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <Button
+        android:id="@+id/Encryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:onClick="enter"
+        android:padding="5dp"
+        android:text="Ok"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
